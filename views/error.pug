@@ -1,0 +1,10 @@
+//- this file should be served as a pug file, so the error codes are generated on the fly, not just precompiled html.
+doctype html
+html
+  head
+    title Website Title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1= `Error ${error.status} (${message}).`
+    br
+    a(href="/") Go to home page
